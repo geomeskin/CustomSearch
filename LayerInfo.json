@@ -1,0 +1,1083 @@
+{
+  "operationalLayers": [
+    {
+      "id": "LocDigV2_Data_190",
+      "layerType": "ArcGISFeatureLayer",
+      "url": "https://gis.jbhunt.com/server/rest/services/LocDigV2_CreateData_PRD/FeatureServer/3",
+      "visibility": true,
+      "opacity": 0.8,
+      "mode": 1,
+      "title": "Yards",
+      "itemId": "5d051892cd9d49789cc09c6932e4bfe8",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "type": "uniqueValue",
+            "field1": "PolygonStatus",
+            "defaultSymbol": null,
+            "uniqueValueInfos": [
+              {
+                "value": "Ready for Review",
+                "symbol": {
+                  "color": null,
+                  "outline": {
+                    "color": [
+                      0,
+                      230,
+                      169,
+                      255
+                    ],
+                    "width": 2.25,
+                    "type": "esriSLS",
+                    "style": "esriSLSDash"
+                  },
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid"
+                },
+                "label": "Ready for Review"
+              },
+              {
+                "value": "Under Review",
+                "symbol": {
+                  "color": null,
+                  "outline": {
+                    "color": [
+                      255,
+                      0,
+                      0,
+                      255
+                    ],
+                    "width": 2.25,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  },
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid"
+                },
+                "label": "Under Review"
+              },
+              {
+                "value": "Reviewed - Approved",
+                "symbol": {
+                  "color": null,
+                  "outline": {
+                    "color": [
+                      76,
+                      230,
+                      0,
+                      255
+                    ],
+                    "width": 2.25,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  },
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid"
+                },
+                "label": "Reviewed - Approved"
+              },
+              {
+                "value": "Requires Maintenance",
+                "symbol": {
+                  "color": null,
+                  "outline": {
+                    "color": [
+                      255,
+                      0,
+                      0,
+                      255
+                    ],
+                    "width": 2.25,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  },
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid"
+                },
+                "label": "Requires Maintenance"
+              }
+            ]
+          },
+          "scaleSymbols": true
+        },
+        "minScale": 950705,
+        "maxScale": 0
+      },
+      "popupInfo": {
+        "title": "Yards: {LocationCode}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationCat",
+            "label": "Location Category",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationCode",
+            "label": "Location Code",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationName",
+            "label": "Location Name",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PolygonSource",
+            "label": "Polygon Source",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PolygonStatus",
+            "label": "Polygon Status",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PolyQCFlag",
+            "label": "Polygon QC Flag",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PolygonType",
+            "label": "Polygon Type",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MultiCodeLoc",
+            "label": "MultiCode Location",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationComments",
+            "label": "Location Comments",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ApprovalComments",
+            "label": "Approval Comments",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CreateUserID",
+            "label": "Create UserID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CreateTimestamp",
+            "label": "Create Timestamp",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "fieldName": "LastUpdateUserID",
+            "label": "Last Update UserID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LastUpdateTimestamp",
+            "label": "Last Update Timestamp",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "fieldName": "LCValidation",
+            "label": "Location Code Validation",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "OverlapValidation",
+            "label": "Overlap Validation",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "OpenCommentValidation",
+            "label": "Open Comment Validation",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationConfidence",
+            "label": "Location Confidence",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ConfidenceComments",
+            "label": "Confidence Comments",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DeleteRequest",
+            "label": "Delete Request",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DeleteReason",
+            "label": "Delete Reason",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape__Area",
+            "label": "SHAPE.STArea()",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "fieldName": "Shape__Length",
+            "label": "SHAPE.STLength()",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ],
+        "description": null,
+        "showAttachments": true,
+        "mediaInfos": [
+          
+        ]
+      }
+    },
+    {
+      "id": "LocDigV2_Data_6939",
+      "layerType": "ArcGISFeatureLayer",
+      "url": "https://gis.jbhunt.com/server/rest/services/LocDigV2_CreateData_PRD/FeatureServer/2",
+      "visibility": true,
+      "opacity": 0.8,
+      "mode": 1,
+      "title": "Buildings",
+      "itemId": "5d051892cd9d49789cc09c6932e4bfe8",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "type": "uniqueValue",
+            "field1": "PolygonStatus",
+            "defaultSymbol": null,
+            "uniqueValueInfos": [
+              {
+                "value": "Ready for Review",
+                "symbol": {
+                  "color": [
+                    0,
+                    169,
+                    230,
+                    77
+                  ],
+                  "outline": {
+                    "color": [
+                      0,
+                      38,
+                      115,
+                      222
+                    ],
+                    "width": 2.25,
+                    "type": "esriSLS",
+                    "style": "esriSLSDash"
+                  },
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid"
+                },
+                "label": "Ready for Review"
+              },
+              {
+                "value": "Under Review",
+                "symbol": {
+                  "color": [
+                    230,
+                    76,
+                    0,
+                    70
+                  ],
+                  "outline": {
+                    "color": [
+                      255,
+                      85,
+                      0,
+                      250
+                    ],
+                    "width": 1.5,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  },
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid"
+                },
+                "label": "Under Review"
+              },
+              {
+                "value": "Reviewed - Approved",
+                "symbol": {
+                  "color": [
+                    56,
+                    168,
+                    0,
+                    103
+                  ],
+                  "outline": {
+                    "color": [
+                      76,
+                      230,
+                      0,
+                      245
+                    ],
+                    "width": 1.5,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  },
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid"
+                },
+                "label": "Reviewed - Approved"
+              },
+              {
+                "value": "Requires Maintenance",
+                "symbol": {
+                  "color": [
+                    230,
+                    76,
+                    0,
+                    72
+                  ],
+                  "outline": {
+                    "color": [
+                      255,
+                      85,
+                      0,
+                      255
+                    ],
+                    "width": 1.5,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  },
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid"
+                },
+                "label": "Requires Maintenance"
+              }
+            ]
+          },
+          "scaleSymbols": true
+        },
+        "minScale": 669012,
+        "maxScale": 0
+      },
+      "popupInfo": {
+        "title": "Buildings: {LocationCode}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationCat",
+            "label": "Location Category",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationCode",
+            "label": "Location Code",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationName",
+            "label": "Location Name",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PolygonSource",
+            "label": "Polygon Source",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PolygonStatus",
+            "label": "Polygon Status",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PolyQCFlag",
+            "label": "Polygon QC Flag",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "PolygonType",
+            "label": "Polygon Type",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "MultiCodeLoc",
+            "label": "MultiCode Location",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationComments",
+            "label": "Location Comments",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ApprovalComments",
+            "label": "Approval Comments",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CreateUserID",
+            "label": "Create UserID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CreateTimestamp",
+            "label": "Create Timestamp",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "fieldName": "LastUpdateUserID",
+            "label": "Last Update UserID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LastUpdateTimestamp",
+            "label": "Last Update Timestamp",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "fieldName": "LCValidation",
+            "label": "Location Code Validation",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "OverlapValidation",
+            "label": "Overlap Validation",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "OpenCommentValidation",
+            "label": "Open Comment Validation",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationConfidence",
+            "label": "Location Confidence",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ConfidenceComments",
+            "label": "Confidence Comments",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DeleteRequest",
+            "label": "Delete Request",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DeleteReason",
+            "label": "Delete Reason",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Shape__Area",
+            "label": "SHAPE.STArea()",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "fieldName": "Shape__Length",
+            "label": "SHAPE.STLength()",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ],
+        "description": null,
+        "showAttachments": true,
+        "mediaInfos": [
+          
+        ]
+      }
+    },
+    {
+      "id": "LocDigV2_Data_8453",
+      "layerType": "ArcGISFeatureLayer",
+      "url": "https://gis.jbhunt.com/server/rest/services/LocDigV2_CreateData_PRD/FeatureServer/1",
+      "visibility": true,
+      "opacity": 1,
+      "mode": 1,
+      "title": "MultiCode Location",
+      "itemId": "5d051892cd9d49789cc09c6932e4bfe8",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "type": "uniqueValue",
+            "field1": "Status",
+            "uniqueValueInfos": [
+              {
+                "value": "Pending",
+                "symbol": {
+                  "color": [
+                    230,
+                    152,
+                    0,
+                    198
+                  ],
+                  "size": 7.5,
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "type": "esriSMS",
+                  "style": "esriSMSCircle",
+                  "outline": {
+                    "color": [
+                      71,
+                      71,
+                      71,
+                      196
+                    ],
+                    "width": 0.75,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  }
+                },
+                "label": "Pending"
+              },
+              {
+                "value": "Created",
+                "symbol": {
+                  "color": [
+                    56,
+                    168,
+                    0,
+                    191
+                  ],
+                  "size": 7.5,
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "type": "esriSMS",
+                  "style": "esriSMSCircle",
+                  "outline": {
+                    "color": [
+                      71,
+                      71,
+                      71,
+                      198
+                    ],
+                    "width": 0.75,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  }
+                },
+                "label": "Created"
+              }
+            ]
+          },
+          "scaleSymbols": true
+        },
+        "minScale": 1380780,
+        "maxScale": 0
+      },
+      "popupInfo": {
+        "title": "MultiCode Location: {LocationCat}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Status",
+            "label": "Status",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationCat",
+            "label": "Location Category",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationCode",
+            "label": "Location Code",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LocationName",
+            "label": "Location Name",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CreateUserID",
+            "label": "Create UserID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CreateTimestamp",
+            "label": "Create Timestamp",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "fieldName": "LastUpdateUserID",
+            "label": "Last Update UserID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LastUpdateTimestamp",
+            "label": "Last Update Timestamp",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          }
+        ],
+        "description": null,
+        "showAttachments": true,
+        "mediaInfos": [
+          
+        ]
+      }
+    },
+    {
+      "id": "LocDigV2_Data_396",
+      "layerType": "ArcGISFeatureLayer",
+      "url": "https://gis.jbhunt.com/server/rest/services/LocDigV2_CreateData_PRD/FeatureServer/0",
+      "visibility": true,
+      "opacity": 1,
+      "mode": 1,
+      "title": "Location Comment",
+      "itemId": "5d051892cd9d49789cc09c6932e4bfe8",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "type": "uniqueValue",
+            "field1": "Status",
+            "uniqueValueInfos": [
+              {
+                "value": "Open",
+                "symbol": {
+                  "color": [
+                    230,
+                    0,
+                    0,
+                    131
+                  ],
+                  "size": 9,
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "type": "esriSMS",
+                  "style": "esriSMSDiamond",
+                  "outline": {
+                    "color": [
+                      71,
+                      71,
+                      71,
+                      198
+                    ],
+                    "width": 0.75,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  }
+                },
+                "label": "Open"
+              },
+              {
+                "value": "Resolved",
+                "symbol": {
+                  "color": [
+                    56,
+                    168,
+                    0,
+                    131
+                  ],
+                  "size": 9,
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "type": "esriSMS",
+                  "style": "esriSMSDiamond",
+                  "outline": {
+                    "color": [
+                      71,
+                      71,
+                      71,
+                      196
+                    ],
+                    "width": 0.75,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                  }
+                },
+                "label": "Resolved"
+              }
+            ]
+          },
+          "scaleSymbols": true
+        },
+        "minScale": 1309605,
+        "maxScale": 0
+      },
+      "popupInfo": {
+        "title": "Location Comment:{Category}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Comments",
+            "label": "Comments",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Status",
+            "label": "Status",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Category",
+            "label": "Category",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "QCNotes",
+            "label": "QCNotes",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CreateUserID",
+            "label": "Create User ID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CreateTimestamp",
+            "label": "Create Timestamp",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "fieldName": "LastUpdateUserID",
+            "label": "Last Update UserID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "LastUpdateTimestamp",
+            "label": "Last Update Timestamp",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          }
+        ],
+        "description": null,
+        "showAttachments": true,
+        "mediaInfos": [
+          
+        ]
+      }
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "World_Imagery_6611",
+        "layerType": "ArcGISTiledMapServiceLayer",
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "visibility": true,
+        "opacity": 1,
+        "title": "World Imagery"
+      },
+      {
+        "id": "World_Boundaries_and_Places_1145",
+        "layerType": "ArcGISTiledMapServiceLayer",
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
+        "visibility": true,
+        "opacity": 1,
+        "title": "World Boundaries and Places",
+        "isReference": true
+      }
+    ],
+    "title": "Imagery with Labels"
+  },
+  "spatialReference": {
+    "wkid": 102100,
+    "latestWkid": 3857
+  },
+  "authoringApp": "WebMapViewer",
+  "authoringAppVersion": "10.7.1",
+  "version": "2.14",
+  "applicationProperties": {
+    "viewing": {
+      "routing": {
+        "enabled": true
+      },
+      "basemapGallery": {
+        "enabled": true
+      },
+      "measure": {
+        "enabled": true
+      },
+      "search": {
+        "enabled": true,
+        "disablePlaceFinder": false,
+        "hintText": "Place or Address",
+        "layers": [
+          {
+            "id": "LocDigV2_Data_6939",
+            "field": {
+              "name": "LocationCode",
+              "exactMatch": false,
+              "type": "esriFieldTypeString"
+            }
+          },
+          {
+            "id": "LocDigV2_Data_190",
+            "field": {
+              "name": "LocationCode",
+              "exactMatch": false,
+              "type": "esriFieldTypeString"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
