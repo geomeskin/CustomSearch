@@ -1,4 +1,3 @@
-
 require([
   "esri/Map",
   "esri/views/MapView",
@@ -10,7 +9,7 @@ require([
   "esri/renderers/UniqueValueRenderer",
   "esri/widgets/Expand",
   "esri/tasks/IdentifyTask",
-  "esri/tasks/support/IdentifyParameters"      
+  "esri/tasks/support/IdentifyParameters"
   ],
   function(
     Map, 
@@ -25,74 +24,6 @@ require([
     IdentifyTask, 
     IdentifyParameters
   ) {
-
-  //The unique value renderer used to display the COMMENTS.
-  var rendComments = new UniqueValueRenderer({
-    field: "Status",
-    defaultsymbol: { type: "simple-marker" }
-  });
-  rendComments.addUniqueValueInfo({
-    value: "Open",
-    symbol: {
-      type: "simple-marker",
-      style: "diamond",
-      size: 12,
-      width: 1,
-      color: [250, 161, 59, 1],
-      outline: {
-        width: 1.5,
-        color: "black"
-      }
-    }
-  });    
-  rendComments.addUniqueValueInfo({
-    value: "Resolved",
-    symbol: {
-      type: "simple-marker",
-      style: "diamond",
-      size: 12,
-      width: 1,
-      color: [52, 235, 88, 1],
-      outline: {
-        width: 1.5,
-        color: "black"
-      }
-    }
-  }); // END Comments Symbology
-
-  //The unique value renderer used to display the MULTI-CODE.
-  var rendMultiCode = new UniqueValueRenderer({
-    field: "Status",
-    defaultsymbol: { type: "simple-marker" }
-  });
-  rendMultiCode.addUniqueValueInfo({
-    value: "Pending",
-    symbol: {
-      type: "simple-marker",
-      style: "circle",
-      size: 12,
-      width: 1,
-      color: [250, 161, 59, 1],
-      outline: {
-        width: 1.5,
-        color: "black"
-      }
-    }
-  });    
-  rendMultiCode.addUniqueValueInfo({
-    value: "Resolved",
-    symbol: {
-      type: "simple-marker",
-      style: "circle",
-      size: 12,
-      width: 1,
-      color: [52, 235, 88, 1],
-      outline: {
-        width: 1.5,
-        color: "black"
-      }
-    }
-  }); // END MULTI-CODE symbology
 
   //The unique value renderer used to display the BUILDINGS.
   var rendBldg = new UniqueValueRenderer({
@@ -400,30 +331,8 @@ require([
     renderer: rendBldg,
     title:  "Buildings"
   });   
-  var layMultiCode = new FeatureLayer({
-    url: "https://gis.jbhunt.com/server/rest/services/LocDigV2_CreateData_PRD/FeatureServer/1",
-    renderer: rendMultiCode,
-    title: "MultiCode Location"
-  });
-  var layComments = new FeatureLayer({
-    url: "https://gis.jbhunt.com/server/rest/services/LocDigV2_CreateData_PRD/FeatureServer/0",
-    renderer: rendComments,
-    title: "Comments"
-  });
   //Add a feature layer to the map
-  map.addMany([layYards, layBuildings, layMultiCode, layComments ]);
-
-  //Create the LayerList widget and assign it to the view
-  const mapLayerList = new LayerList({
-    view : view,
-    label: "LAYERS",
-  });  
-
-  //  Create the EXPAND for the Layers list
-  var expLayers = new Expand({
-    view: view,
-    content: mapLayerList,
-  });    
+  map.addMany([layYards, layBuildings ]);
 
   //Create the LEGEND widget
   var mapLegend = new Legend({
@@ -448,12 +357,6 @@ require([
     index: 0
   });      
   
-  // Add the LayerList EXPAND to the page
-  view.ui.add(expLayers, {
-    position: "top-right",
-    index: 1
-  });
-
   //  Add the LEGEND EXPAND to the page
   view.ui.add(expLegend, {
     position: "top-right",
